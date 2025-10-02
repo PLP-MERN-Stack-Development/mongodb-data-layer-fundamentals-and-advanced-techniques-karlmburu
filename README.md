@@ -1,59 +1,31 @@
-# MongoDB Fundamentals - Week 1
+# MongoDB Indexing Script
 
-## Setup Instructions
+This project contains a MongoDB script (`queries.js`) that creates indexes and demonstrates performance improvements using the `explain()` method.
 
-Before you begin this assignment, please make sure you have the following installed:
+## Prerequisites
 
-1. **MongoDB Community Edition** - [Installation Guide](https://www.mongodb.com/docs/manual/administration/install-community/)
-2. **MongoDB Shell (mongosh)** - This is included with MongoDB Community Edition
-3. **Node.js** - [Download here](https://nodejs.org/)
+- **MongoDB** installed and running locally OR a MongoDB Atlas cluster.
+- **mongosh** (MongoDB Shell).
+- A database named `plp_bookstore` with a `books` collection.
 
-### Node.js Package Setup
+## Files
 
-Once you have Node.js installed, run the following commands in your assignment directory:
+- `queries.js` → Contains the following commands:
+  -  Use plp_bookstore databse
+  -  Basic Crud operations like retreiving books by year, author etc
+  -  Advanced queries like sorting, skipping, and limiting
+  -  Aggregation pipelines
+  - Create an index on the `title` field.
+  - Create a compound index on `author` and `publish_year`.
+  - Run `explain()` to show performance improvements.
 
-```bash
-# Initialize a package.json file
-npm init -y
+## Running the Script
 
-# Install the MongoDB Node.js driver
-npm install mongodb
-```
+1. Clone or copy the files to your local environment.
+2. Open a terminal and navigate to the folder containing `indexes.js`.
+3. Run the script in mongosh:
 
-## Assignment Overview
+   ```bash
+   mongosh "mongodb://localhost:27017/plp_bookstore" indexes.js
 
-This week focuses on MongoDB fundamentals including:
-- Creating and connecting to MongoDB databases
-- CRUD operations (Create, Read, Update, Delete)
-- MongoDB queries and filters
-- Aggregation pipelines
-- Indexing for performance
 
-## Submission
-
-Complete all the exercises in this assignment and push your code to GitHub using the provided GitHub Classroom link.
-
-## Getting Started
-
-1. Accept the GitHub Classroom assignment invitation
-2. Clone your personal repository that was created by GitHub Classroom
-3. Install MongoDB locally or set up a MongoDB Atlas account
-4. Run the provided `insert_books.js` script to populate your database
-5. Complete the tasks in the assignment document
-
-## Files Included
-
-- `Week1-Assignment.md`: Detailed assignment instructions
-- `insert_books.js`: Script to populate your MongoDB database with sample book data
-
-## Requirements
-
-- Node.js (v18 or higher)
-- MongoDB (local installation or Atlas account)
-- MongoDB Shell (mongosh) or MongoDB Compass
-
-## Resources
-
-- [MongoDB Documentation](https://docs.mongodb.com/)
-- [MongoDB University](https://university.mongodb.com/)
-- [MongoDB Node.js Driver](https://mongodb.github.io/node-mongodb-native/) 
