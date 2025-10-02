@@ -9,6 +9,7 @@ This project contains a MongoDB script (`queries.js`) that creates indexes and d
 - A database named `plp_bookstore` with a `books` collection.
 
 ## Files
+- `assignment` folder containing screenshots
 
 - `queries.js` → Contains the following commands:
   -  Use plp_bookstore databse
